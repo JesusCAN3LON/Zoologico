@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal managment </title>
+    <title>Animal managment </title>
     <link rel="icon" href="images/logozooicon.png">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/GestionPCSS.css">
+    <link rel="stylesheet" href="CSS/GestionACSS.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <script src="JS/jquery-3.5.1.slim.min.js"></script>
     <script src="JS/popper.min.js"></script>
@@ -48,7 +48,7 @@
 
     <div class="container-fluid">
         <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal"
-            data-target="#exampleModal">Registrar Usuario
+            data-target="#exampleModal">Registrar Animal
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -56,7 +56,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registro de usuario</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Registro de animales</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -65,19 +65,22 @@
                         <form>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese animal">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name"
                                     placeholder="Ingrese el nombre">
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="recipient-name"
-                                    placeholder="Ingrese el apellido">
+                                    placeholder="Ingrese su fecha de ingreso">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
-                                    placeholder="Ingrese la cedula">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
-                                    placeholder="Ingrese el cargo">
+                                <label for="">Sexo:</label>
+                                <form action="">
+                                    <label for="Macho">M</label><input type="radio" value="Macho" name="genero">
+                                    <label for="Hembra">H</label><input type="radio" value="Hembra" name="genero">
+                                </form>
                             </div>
                         </form>
                     </div>
@@ -93,10 +96,11 @@
         <!--Inicio de la tabla-->
         <table>
             <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>C.I</th>
-                <th>Cargo</th>
+                <th>Animal</th>
+                <th>Codigo</th>
+                <th>Habitat</th>
+                <th>Cantidad</th>
+                <th>Inventario</th>
             </tr>
             <tr>
                 <td>Juan</td>

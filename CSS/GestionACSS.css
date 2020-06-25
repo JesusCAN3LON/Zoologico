@@ -47,8 +47,8 @@ nav li:hover{
     padding: 15px;
     margin-top: 20px;
     margin-left: 40%;
-    transition: 0.3s;
-}
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
 #botonR:hover{
     box-shadow: 0 0 10px white !important;
     transform: scale(1.1);
@@ -74,10 +74,15 @@ th, td{
 }
 .botonE1{
     background-color: red;
-    color: black;
-    padding: 5px;
+    color: white;
+    padding: 6px;
     border-radius: 5px;
     border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+.botonE1:hover{
+    box-shadow: 0 0 5px red;
+    transform: scale(1.1);
 }
 .botonM{
     border-bottom: 0;
@@ -86,20 +91,50 @@ th, td{
 #botonM1{
     background-color: white !important;
     color: black !important;
+    border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+#botonM1:hover{
+    box-shadow: 0 0 5px cyan;
+    transform: scale(1.1);
 }
 #botonM2{
     background-color: white !important;
     color: black !important;
+    border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+#botonM2:hover{
+    box-shadow: 0 0 5px cyan;
+    transform: scale(1.1);
 }
 #botonM3{
     background-color: white !important;
     color: black !important;
+    border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+#botonM3:hover{
+    box-shadow: 0 0 5px cyan;
+    transform: scale(1.1);
 }
 #botonM4{
     background-color: white !important;
     color: black !important;
+    border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+#botonM4:hover{
+    box-shadow: 0 0 5px cyan;
+    transform: scale(1.1);
 }
 #botonM5{
     background-color: white !important;
     color: black !important;
+    border: solid 1px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;}
+#botonM5:hover{
+    box-shadow: 0 0 5px cyan;
+    transform: scale(1.1);
 }
