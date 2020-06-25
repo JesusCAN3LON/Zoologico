@@ -45,7 +45,8 @@
     </header>
 
     <div class="container-fluid">
-        <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal" data-target="#exampleModal">Registrar Usuario
+        <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal"
+            data-target="#exampleModal">Registrar Usuario
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -61,16 +62,20 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese el nombre">
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese el nombre">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese el apellido">
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese el apellido">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese la cedula">
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese la cedula">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese el cargo">
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese el cargo">
                             </div>
                         </form>
                     </div>
@@ -81,8 +86,278 @@
                 </div>
             </div>
         </div>
+        <!--Fin del boton registrar-->
+
+        <!--Inicio de la tabla-->
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>C.I</th>
+                <th>Cargo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Garcia</td>
+                <td>11.103.482</td>
+                <td>Departamento de Nutricion</td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td class="botonM">
+                    <button type="button" class="btn btn-primary" id="botonM1" data-toggle="modal"
+                        data-target="#modalJuan">Modificar
+                    </button>
+
+                    <div class="modal fade" id="modalJuan" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese la cedula">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el cargo">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Rodolfo</td>
+                <td>Cesta</td>
+                <td>10.627.130</td>
+                <td>Departamento de Veterinaria</td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td class="botonM">
+                    <button type="button" class="btn btn-primary" id="botonM2" data-toggle="modal"
+                        data-target="#modalRodolfo">Modificar
+                    </button>
+
+                    <div class="modal fade" id="modalRodolfo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese la cedula">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el cargo">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Wilfredo</td>
+                <td>Vargas</td>
+                <td>7.311.892</td>
+                <td>Departamento de Manejo de Coleccion</td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td class="botonM">
+                    <button type="button" class="btn btn-primary" id="botonM3" data-toggle="modal"
+                        data-target="#modalWilfredo">Modificar
+                    </button>
+
+                    <div class="modal fade" id="modalWilfredo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese la cedula">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el cargo">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Jesus</td>
+                <td>Perez</td>
+                <td>12.031.745</td>
+                <td>Equipo de Veterinaria</td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td class="botonM">
+                    <button type="button" class="btn btn-primary" id="botonM4" data-toggle="modal"
+                        data-target="#modalJesus">Modificar
+                    </button>
+
+                    <div class="modal fade" id="modalJesus" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese la cedula">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el cargo">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Melbin</td>
+                <td>Aguilar</td>
+                <td>11.024.141</td>
+                <td>Laboratorio Clinico</td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td class="botonM">
+                    <button type="button" class="btn btn-primary" id="botonM5" data-toggle="modal"
+                        data-target="#modalMelbin">Modificar
+                    </button>
+
+                    <div class="modal fade" id="modalMelbin" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese la cedula">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Ingrese el cargo">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
 </body>
 
 </html>
+<script>
+    $(".modal").on("hidden.bs.modal", function () {
+        $(this).find('form')[0].trigger('reset');
+    });
+
+    function deleteFunction() {
+        confirm("Esta seguro de que desea eliminar este usuario?");
+    }
+</script>

@@ -28,11 +28,19 @@ nav li:hover{
     background-attachment: fixed;
     background-size: cover;
     top: 20px;
-    max-width: 60vw;
+    max-width: 65vw;
     box-shadow: 0px 0px 20px black;
     border-radius: 10px;
+    height: 600px;
 }
 
+.modal-header{
+    background: #3D3D3D !important;
+    
+}
+.modal-header h5{
+    color: #36D732 !important;
+}
 #botonR {
     background-color: #36D732 !important;
     color: black !important ;
@@ -48,4 +56,50 @@ nav li:hover{
 #botonG {
     background-color: #36D732 !important;
     color: black !important ;
+}
+
+table{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: left;
+    padding: 13px;
+    border-bottom: solid 1px;
+}
+.botonE{
+    border-bottom: 0;
+    padding-right: 0;
+}
+.botonE1{
+    background-color: red;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+.botonM{
+    border-bottom: 0;
+    padding-left: 0;
+}
+#botonM1{
+    background-color: white !important;
+    color: black !important;
+}
+#botonM2{
+    background-color: white !important;
+    color: black !important;
+}
+#botonM3{
+    background-color: white !important;
+    color: black !important;
+}
+#botonM4{
+    background-color: white !important;
+    color: black !important;
+}
+#botonM5{
+    background-color: white !important;
+    color: black !important;
 }
