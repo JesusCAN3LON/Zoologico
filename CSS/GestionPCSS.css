@@ -41,12 +41,16 @@ nav li:hover{
 .modal-header h5{
     color: #36D732 !important;
 }
+
+#iconoR{
+    transform: scale(2);
+}
 #botonR {
     background-color: #36D732 !important;
     color: black !important ;
-    padding: 15px;
+    padding: 20px 30px 20px 30px;
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 45%;
     transition: 0.2s;
     font-family: 'Noto Sans JP', sans-serif;}
 #botonR:hover{
@@ -70,12 +74,15 @@ th, td{
 }
 .botonE{
     border-bottom: 0;
-    padding-right: 0;
+    padding-left: 0;
+}
+#iconoE1, #iconoE2, #iconoE3, #iconoE4, #iconoE5{
+    transform: scale(1.1) !important;
 }
 .botonE1{
     background-color: red;
     color: white;
-    padding: 6px;
+    padding: 6px 10px 6px 10px;
     border-radius: 5px;
     border: solid 1px;
     transition: 0.2s;
@@ -86,14 +93,14 @@ th, td{
 }
 .botonM{
     border-bottom: 0;
-    padding-left: 0;
+    padding-right: 0;
 }
 #botonM1{
     background-color: white !important;
     color: black !important;
     border: solid 1px;
     transition: 0.2s;
-    font-family: 'Noto Sans JP', sans-serif;}
+}
 #botonM1:hover{
     box-shadow: 0 0 5px cyan;
     transform: scale(1.1);
@@ -103,7 +110,7 @@ th, td{
     color: black !important;
     border: solid 1px;
     transition: 0.2s;
-    font-family: 'Noto Sans JP', sans-serif;}
+}
 #botonM2:hover{
     box-shadow: 0 0 5px cyan;
     transform: scale(1.1);
@@ -113,7 +120,7 @@ th, td{
     color: black !important;
     border: solid 1px;
     transition: 0.2s;
-    font-family: 'Noto Sans JP', sans-serif;}
+}
 #botonM3:hover{
     box-shadow: 0 0 5px cyan;
     transform: scale(1.1);
@@ -123,7 +130,7 @@ th, td{
     color: black !important;
     border: solid 1px;
     transition: 0.2s;
-    font-family: 'Noto Sans JP', sans-serif;}
+}
 #botonM4:hover{
     box-shadow: 0 0 5px cyan;
     transform: scale(1.1);
@@ -133,8 +140,11 @@ th, td{
     color: black !important;
     border: solid 1px;
     transition: 0.2s;
-    font-family: 'Noto Sans JP', sans-serif;}
+}
 #botonM5:hover{
     box-shadow: 0 0 5px cyan;
     transform: scale(1.1);
+}
+#iconoM1, #iconoM2, #iconoM3, #iconoM4, #iconoM5{
+    transform: scale(1.8) !important;
 }

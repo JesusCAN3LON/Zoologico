@@ -29,16 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Gestion de Personal</a>
+                        <a class="nav-link" href="GestionP.html">Gestion de Personal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gestion de Animales</a>
+                        <a class="nav-link" href="GestionA.html">Gestion de Animales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gestion de Alimentos</a>
+                        <a class="nav-link" href="GestionAlimentos.html">Gestion de Alimentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gestion de Enfermedades de Animales</a>
+                        <a class="nav-link" href="GestionEnfermedades.html">Gestion de Enfermedades de Animales</a>
                     </li>
                 </ul>
             </div>
@@ -47,8 +47,9 @@
     </header>
 
     <div class="container-fluid">
+        <!--Inicio de boton registrar usuario-->
         <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal"
-            data-target="#exampleModal">Registrar Usuario
+            data-target="#exampleModal"><i class="fa fa-user-plus" id="iconoR" aria-hidden="true"></i>
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -103,10 +104,10 @@
                 <td>Garcia</td>
                 <td>11.103.482</td>
                 <td>Departamento de Nutricion</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM1" data-toggle="modal"
-                        data-target="#modalJuan">Modificar
+                        data-target="#modalJuan">
+                        <i class="fa fa-pencil-square-o" id="iconoM1" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalJuan" tabindex="-1" role="dialog"
@@ -147,16 +148,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-user-times" id="iconoE1" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
                 <td>Rodolfo</td>
                 <td>Cesta</td>
                 <td>10.627.130</td>
                 <td>Departamento de Veterinaria</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM2" data-toggle="modal"
-                        data-target="#modalRodolfo">Modificar
+                        data-target="#modalRodolfo">
+                        <i class="fa fa-pencil-square-o" id="iconoM2" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalRodolfo" tabindex="-1" role="dialog"
@@ -197,16 +200,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-user-times" id="iconoE2" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
                 <td>Wilfredo</td>
                 <td>Vargas</td>
                 <td>7.311.892</td>
                 <td>Departamento de Manejo de Coleccion</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM3" data-toggle="modal"
-                        data-target="#modalWilfredo">Modificar
+                        data-target="#modalWilfredo">
+                        <i class="fa fa-pencil-square-o" id="iconoM3" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalWilfredo" tabindex="-1" role="dialog"
@@ -247,16 +252,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-user-times" id="iconoE3" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
-                <td>Jesus</td>
+                <td>Oranny</td>
                 <td>Perez</td>
-                <td>12.031.745</td>
+                <td>27.830.116</td>
                 <td>Equipo de Veterinaria</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM4" data-toggle="modal"
-                        data-target="#modalJesus">Modificar
+                        data-target="#modalJesus">
+                        <i class="fa fa-pencil-square-o" id="iconoM4" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalJesus" tabindex="-1" role="dialog"
@@ -273,7 +280,7 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Jesus">
+                                                placeholder="Ingrese el nombre" value="Oranny">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
@@ -281,7 +288,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="12.031.745">
+                                                placeholder="Ingrese la cedula" value="27.830.116">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
@@ -297,16 +304,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-user-times" id="iconoE4" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
                 <td>Melbin</td>
                 <td>Aguilar</td>
                 <td>12.024.141</td>
                 <td>Laboratorio Clinico</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM5" data-toggle="modal"
-                        data-target="#modalMelbin">Modificar
+                        data-target="#modalMelbin">
+                        <i class="fa fa-pencil-square-o" id="iconoM5" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalMelbin" tabindex="-1" role="dialog"
@@ -347,6 +356,8 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-user-times" id="iconoE5" aria-hidden="true"></i>
+                </button></td>
             </tr>
         </table>
     </div>
