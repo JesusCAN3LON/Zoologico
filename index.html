@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BARARIDA ZOO</title>
-    <link rel="icon" href="images/logozooicon.png">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Homepage.css">
-    <script src="JS/jquery-3.5.1.slim.min.js"></script>
-    <script src="JS/popper.min.js"></script>
-    <script src="JS/bootstrap.js"></script>
-    <link rel="stylesheet" href="CSS/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARARIDA ZOO</title>
+  <link rel="icon" href="images/logozooicon.png">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/Homepage.css">
+  <script src="JS/jquery-3.5.1.slim.min.js"></script>
+  <script src="JS/popper.min.js"></script>
+  <script src="JS/bootstrap.js"></script>
+  <link rel="stylesheet" href="CSS/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <a class="navbar-brand" href="#">
-                <img src="images/logozoo.png" width="50" height="50" alt="">
-            </a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="images/logozoo.png" width="50" height="50" alt="">
+      </a>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="GestionP.html">Gestion de Personal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="GestionA.html">Gestion de Animales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="GestionAlimentos.html">Gestion de Alimentos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="GestionEnfermedades.html">Gestion de Enfermedades de Animales</a>
-                </li>
-              </ul>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="GestionP.html">Gestion de Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GestionA.html">Gestion de Animales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GestionAlimentos.html">Gestion de Alimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GestionEnfermedades.html">Gestion de Enfermedades de Animales</a>
+          </li>
+          <li id="botonLright">
+            <button type="button" class="btn btn-primary" id="botonL" data-toggle="modal" data-target="#login">
+              <i class="fa fa-user" id="iconoL" aria-hidden="true"></i>
+            </button>
+
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" id="contentRegister">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input class="botonsLogin" type="email" placeholder="Correo del usuario" required>
+                      </div>
+                      <div class="form-group">
+                        <input class="botonsLogin" type="password" placeholder="Clave de acceso" required>
+                      </div>
+                      <div class="form-group">
+                        <a href="#">Olvidaste tu clave de acceso?</a> <br>
+                        <p>Al continuar, acepta las Condiciones de uso y el Aviso de privacidad del sistema.</p>
+                      </div>
+                  </div>
+                  <div class="modal-footer" id="contentRegisterF">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary" id="botonG">Entrar</button>
+                  </div>
+                    </form>
+                </div>
+              </div>
             </div>
-          </nav>
-    </header>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <!--Aqui empieza el jumbotron-->
-  <div id="main">    
-      <div class="container-fluid">
+  <!--Aqui empieza el jumbotron-->
+  <div id="main">
+    <div class="container-fluid">
       <div class="row">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1>Bienvenidos al Zoologico Bararida!</h1>
-            <p class="lead">Hola usuario! Esta pagina esta especializada para la administracion del Zoologico. Aqui podras conseguir diversas herramientas para tu objetivo de uso</p>
+            <p class="lead">Hola usuario! Esta pagina esta especializada para la administracion del Zoologico. Aqui
+              podras conseguir diversas herramientas para tu objetivo de uso</p>
           </div>
         </div>
       </div>
@@ -97,4 +138,11 @@
     </div>
   </div>
 </body>
+
 </html>
+
+<script>
+  $(".modal").on("hidden.bs.modal", function () {
+        $(this).find('form')[0].trigger('reset');
+    });
+</script>

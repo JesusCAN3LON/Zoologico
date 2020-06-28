@@ -47,8 +47,9 @@
     </header>
 
     <div class="container-fluid">
-        <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal"
-            data-target="#exampleModal">Registrar Animal
+        <button type="button" class="btn btn-primary" id="botonR" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-paw" id="petIcon" aria-hidden="true"></i>
+            <i class="fa fa-plus" aria-hidden="true"></i>
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -74,6 +75,10 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" id="recipient-name"
                                     placeholder="Ingrese su fecha de ingreso">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Ingrese el pais de origen">
                             </div>
                             <div class="form-group">
                                 <label for="">Sexo:</label>
@@ -103,14 +108,14 @@
                 <th>Inventario</th>
             </tr>
             <tr>
-                <td>Juan</td>
-                <td>Garcia</td>
-                <td>11.103.482</td>
-                <td>Departamento de Nutricion</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td>Leon</td>
+                <td>L10NH</td>
+                <td>Selvatico</td>
+                <td>13</td>
+                <td style="color: red;">Ocupado</td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM1" data-toggle="modal"
-                        data-target="#modalJuan">Modificar
+                        data-target="#modalJuan"><i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalJuan" tabindex="-1" role="dialog"
@@ -127,19 +132,15 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Juan">
+                                                placeholder="Ingrese el animal" value="Leon">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el apellido" value="Garcia">
+                                                placeholder="Ingrese la cantidad actual" value="13">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="11.103.482">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el cargo" value="Departamento de Nutricion">
+                                                placeholder="Estado del inventario" value="Ocupado">
                                         </div>
                                     </form>
                                 </div>
@@ -151,16 +152,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-times iconoE" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
-                <td>Rodolfo</td>
-                <td>Cesta</td>
-                <td>10.627.130</td>
-                <td>Departamento de Veterinaria</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td>Cocodrilo</td>
+                <td>AL1T0</td>
+                <td>Tropical</td>
+                <td>8</td>
+                <td style="color: red;">Ocupado</td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM2" data-toggle="modal"
-                        data-target="#modalRodolfo">Modificar
+                        data-target="#modalRodolfo"><i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalRodolfo" tabindex="-1" role="dialog"
@@ -168,7 +171,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar base de datos</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -177,19 +180,15 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Rodolfo">
+                                                placeholder="Ingrese el animal" value="Cocodrilo">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el apellido" value="Cesta">
+                                                placeholder="Ingrese la cantidad actual" value="">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="10.627.130">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el cargo" value="Departamento de Veterinaria">
+                                                placeholder="Estado del inventario" value="Ocupado">
                                         </div>
                                     </form>
                                 </div>
@@ -201,16 +200,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-times iconoE" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
-                <td>Wilfredo</td>
-                <td>Vargas</td>
-                <td>7.311.892</td>
-                <td>Departamento de Manejo de Coleccion</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td>Tortuga</td>
+                <td>T6R1L</td>
+                <td>Tropical</td>
+                <td>12</td>
+                <td style="color: green;">Disponible</td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM3" data-toggle="modal"
-                        data-target="#modalWilfredo">Modificar
+                        data-target="#modalWilfredo"><i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalWilfredo" tabindex="-1" role="dialog"
@@ -218,7 +219,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar base de datos</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -227,19 +228,15 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Wilfredo">
+                                                placeholder="Ingrese el animal" value="Tortuga">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el apellido" value="Vargas">
+                                                placeholder="Ingrese la cantidad actual" value="12">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="7.311.892">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el cargo" value="Departamento de Manejo de Coleccion">
+                                                placeholder="Estado del inventario" value="Disponible">
                                         </div>
                                     </form>
                                 </div>
@@ -251,16 +248,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-times iconoE" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
-                <td>Jesus</td>
-                <td>Perez</td>
-                <td>12.031.745</td>
-                <td>Equipo de Veterinaria</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td>Loro</td>
+                <td>P4NC5</td>
+                <td>Tropical</td>
+                <td>5</td>
+                <td style="color: green;">Disponible</td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM4" data-toggle="modal"
-                        data-target="#modalJesus">Modificar
+                        data-target="#modalJesus"><i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalJesus" tabindex="-1" role="dialog"
@@ -268,7 +267,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar base de datos</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -277,19 +276,15 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Jesus">
+                                                placeholder="Ingrese el animal" value="Loro">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el apellido" value="Perez">
+                                                placeholder="Ingrese la cantidad actual" value="5">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="12.031.745">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el cargo" value="Equipo de Veterinaria">
+                                                placeholder="Estado del inventario" value="Disponible">
                                         </div>
                                     </form>
                                 </div>
@@ -301,16 +296,18 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-times iconoE" aria-hidden="true"></i>
+                </button></td>
             </tr>
             <tr>
-                <td>Melbin</td>
-                <td>Aguilar</td>
-                <td>12.024.141</td>
-                <td>Laboratorio Clinico</td>
-                <td class="botonE"><button class="botonE1" onclick="deleteFunction()">Eliminar</button></td>
+                <td>Manati</td>
+                <td>M4NT1</td>
+                <td>Marino</td>
+                <td>4</td>
+                <td style="color: green;">Disponible</td>
                 <td class="botonM">
                     <button type="button" class="btn btn-primary" id="botonM5" data-toggle="modal"
-                        data-target="#modalMelbin">Modificar
+                        data-target="#modalMelbin"><i class="fa fa-cog" aria-hidden="true"></i>
                     </button>
 
                     <div class="modal fade" id="modalMelbin" tabindex="-1" role="dialog"
@@ -318,7 +315,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modificar usuario</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar base de datos</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -327,19 +324,15 @@
                                     <form>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el nombre" value="Melbin">
+                                                placeholder="Ingrese el animal" value="Manati">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el apellido" value="Aguilar">
+                                                placeholder="Ingrese la cantidad actual" value="4">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese la cedula" value="12.024.141">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Ingrese el cargo" value="Laboratorio Clinico">
+                                                placeholder="Estado del inventario" value="Disponible">
                                         </div>
                                     </form>
                                 </div>
@@ -351,6 +344,8 @@
                         </div>
                     </div>
                 </td>
+                <td class="botonE"><button class="botonE1" onclick="deleteFunction()"><i class="fa fa-times iconoE" aria-hidden="true"></i>
+                </button></td>
             </tr>
         </table>
     </div>
@@ -364,6 +359,6 @@
     });
 
     function deleteFunction() {
-        confirm("Esta seguro de que desea eliminar este usuario?");
+        confirm("Esta seguro de que desea eliminar este animal de su base de datos?");
     }
 </script>
