@@ -63,29 +63,30 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form onsubmit="return validarFormulario()" name='registro'>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
+                                <input type="text" class="form-control" name='nombre'
                                     placeholder="Ingrese el nombre">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
+                                <input type="text" class="form-control" name='apellido'
                                     placeholder="Ingrese el apellido">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
+                                <input type="text" class="form-control" name='cedula'
                                     placeholder="Ingrese la cedula">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name"
+                                <input type="text" class="form-control" name='cargo'
                                     placeholder="Ingrese el cargo">
                             </div>
-                        </form>
+                            <h1 id="mensaje" class="display-4" style='font-size:20px'></h1>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="botonG">Guardar</button>
+                        <button type="submit" class="btn btn-primary" id="botonG">Guardar</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -372,5 +373,18 @@
 
     function deleteFunction() {
         confirm("Esta seguro de que desea eliminar este usuario?");
+    }
+
+    function validarFormulario(){
+        var nombre=document.forms['registro']['nombre'].value;
+        var apellido=document.forms['registro']['apellido'].value;
+        var cedula=document.forms['registro']['cedula'].value;
+        var cargo=document.forms['registro']['cargo'].value;
+
+        if ((nombre=='')||(apellido=='')||(cedula=='')||(cargo=='')) {
+     
+            document.getElementById('mensaje').innerHTML='Debe completar todos los campos';
+            return false
+        }
     }
 </script>
