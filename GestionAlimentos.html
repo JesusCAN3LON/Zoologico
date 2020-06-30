@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal managment </title>
+    <title>Food management </title>
     <link rel="icon" href="images/logozooicon.png">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="CSS/GestionAlimentosCSS.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap" rel="stylesheet">
     <script src="JS/jquery-3.5.1.slim.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.js"></script>
@@ -47,7 +47,47 @@
     </header>
 
     <div class="container-fluid">
-        
+        <table>
+            <h3 id="title">ALIMENTOS</h3>
+            <tr>
+                <td><div class="image"><h3>KG</h3><img src="images/food1.jpg" alt="food1">
+                    <input type="text" class="nro" value="27"></div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food2.jpg" alt="food2">
+                    <input type="text" class="nro" value="7">
+                </div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food3.jpg" alt="food3">
+                    <input type="text" class="nro" value="9">
+                </div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food4.jpg" alt="food4">
+                    <input type="text" class="nro" value="33">
+                </div></td>
+            </tr>
+            <tr>
+                <td><div class="image"><h3>KG</h3><img src="images/food5.jpg" alt="food5">
+                    <input type="text" class="nro" value="46">
+                </div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food6.jpg" alt="food6">
+                    <input type="text" class="nro" value="52">
+                </div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food7.jpg" alt="food7">
+                    <input type="text" class="nro" value="21">
+                </div></td>
+                <td><div class="image"><h3>KG</h3><img src="images/food8.jpg" alt="food8">
+                    <input type="text" class="nro" value="10">
+                </div></td>
+            </tr>
+            <tr>
+                <td><div class="image"><h3>KG</h3><img src="images/food9.jpg" alt="food9">
+                    <input type="text" class="nro" value="61">
+                </div></td>
+                <td><div class="image"><h3>LT</h3><img src="images/food10.jpg" alt="food10">
+                    <input type="text" class="nro" value="2448">
+                </div></td>
+                <td><div id="broma"><h3>Agregar</h3><img src="images/fondobroma.jpg" alt="broma">
+                    <button onclick="bromita()" id="bromaBoton"><i class="fa fa-plus-circle bromaIcon" aria-hidden="true"></i></button>
+                </div></td>
+            </tr>
+        </table>
     </div>
 
 </body>
@@ -60,5 +100,9 @@
 
     function deleteFunction() {
         confirm("Esta seguro de que desea eliminar este animal de su base de datos?");
+    }
+
+    function bromita(){
+        alert("Te la creiste jeje, no hay base de datos")
     }
 </script>

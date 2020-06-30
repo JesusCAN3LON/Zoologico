@@ -33,3 +33,85 @@ nav li:hover{
     border-radius: 10px;
     height: 700px;
 }
+
+.image{
+    width: 220px;
+    height: 180px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+.image img{
+    width: 220px;
+    height: 180px;
+    border-radius: 8px;
+}
+.image h3{
+    position: relative;
+    top: 184px;
+    width: 40px;
+    left: 177px;
+    background-color: white;
+    border-radius: 8px;
+}
+.nro{
+    position: relative;
+    bottom: 37px;
+    width: 40px;
+    left: 135px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#broma{
+    width: 220px;
+    height: 180px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+#broma h3{
+    color: white;
+    position: relative;
+    top: 175px;
+    left: 58px;
+    font-family: sans-serif;
+}
+#broma img{
+    width: 220px;
+    height: 180px;
+    border-radius: 8px;
+}
+#bromaBoton{
+    position: relative;
+    bottom: 105px;
+    left: 93px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: none;
+    outline: none;
+    
+}
+.bromaIcon{
+    transform: scale(4);
+    color: white;
+    transition: 0.3s;
+}
+.bromaIcon:hover{
+    transform: scale(5);
+}
+#title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'MuseoModerno', cursive;
+    top: 20px;
+    font-size: 3em;
+    text-shadow: black 0 0 4px;
+}

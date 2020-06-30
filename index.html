@@ -40,44 +40,15 @@
           <li class="nav-item">
             <a class="nav-link" href="GestionEnfermedades.html">Gestion de Enfermedades de Animales</a>
           </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
           <li id="botonLright">
             <button type="button" class="btn btn-primary" id="botonL" data-toggle="modal" data-target="#login">
               <i class="fa fa-user" id="iconoL" aria-hidden="true"></i>
             </button>
-
-            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content" id="contentRegister">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <input class="botonsLogin" type="email" placeholder="Correo del usuario" required>
-                      </div>
-                      <div class="form-group">
-                        <input class="botonsLogin" type="password" placeholder="Clave de acceso" required>
-                      </div>
-                      <div class="form-group">
-                        <a href="#">Olvidaste tu clave de acceso?</a> <br>
-                        <p>Al continuar, acepta las Condiciones de uso y el Aviso de privacidad del sistema.</p>
-                      </div>
-                  </div>
-                  <div class="modal-footer" id="contentRegisterF">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" id="botonG">Entrar</button>
-                  </div>
-                    </form>
-                </div>
-              </div>
-            </div>
           </li>
         </ul>
+
       </div>
     </nav>
   </header>
@@ -141,8 +112,40 @@
 
 </html>
 
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="contentRegister">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input class="botonsLogin" type="email" placeholder="Correo del usuario" required>
+          </div>
+          <div class="form-group">
+            <input class="botonsLogin" type="password" placeholder="Clave de acceso" required>
+          </div>
+          <div class="form-group">
+            <a href="#">Olvidaste tu clave de acceso?</a> <br>
+            <p>Al continuar, acepta las Condiciones de uso y el Aviso de privacidad del sistema.</p>
+          </div>
+      </div>
+      <div class="modal-footer" id="contentRegisterF">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" id="botonG">Entrar</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <script>
   $(".modal").on("hidden.bs.modal", function () {
-        $(this).find('form')[0].trigger('reset');
-    });
+    $(this).find('form')[0].trigger('reset');
+  });
 </script>
