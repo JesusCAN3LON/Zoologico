@@ -1,0 +1,104 @@
+body{
+    background-image: url("../images/bodywallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    background: #3D3D3D !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+}
+nav a{
+    color: #36D732 !important;
+}
+nav li{
+    padding: 15px;
+    margin: 0 !important;
+    transition: 0.5s;
+}
+nav li:hover{
+    background-color: #727272;
+}
+
+.container-fluid{
+    background-image: url("../images/bodywallpaperD.jpg");
+    position: relative;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 20px;
+    max-width: 65vw;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    height: 680px;
+}
+
+.cuadro1{
+    background-image: url("../images/cubes.jpg") !important;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.cuadro2{
+    background-image: url("../images/diagnostic.jpg") !important;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.cuadro3{
+    background-image: url("../images/report.jpg") !important;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.cuadro4{
+    background-image: url("../images/bear.jpg") !important;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.cuadroHover{
+    transition: 0.3s;
+}
+.cuadroHover:hover{
+    transform: scale(1.1);
+    z-index: 99;
+}
+.cuadroZoo{
+    background-image: url("../images/cuadroSide.jpg");
+    Background-size: 100% 100%;
+    border-radius: 10px;
+}
+.cuadroEmail{
+    background-color: #3D3D3D;
+    border-radius: 10px;
+}
+.correo{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+}
+#inputEmail{
+    background: none;
+    border: 1px solid #36D732;
+    outline: none;
+    margin: auto;
+    width: 40%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+h5.display-4{
+    font-size:26px !important;
+}
+
+
+@media (max-width: 1024px){
+    h5.display-4{
+        font-size:20px !important;
+    }   
+}
+
+@media (max-width: 768px){
+    h5.display-4{
+        font-size:15px !important;
+    }   
+}

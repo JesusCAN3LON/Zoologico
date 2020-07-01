@@ -1,0 +1,85 @@
+body{
+    background-image: url("../images/bodywallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    background: #3D3D3D !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+}
+nav a{
+    color: #36D732 !important;
+}
+nav li{
+    padding: 15px;
+    margin: 0 !important;
+    transition: 0.5s;
+}
+nav li:hover{
+    background-color: #727272;
+}
+
+.container-fluid{
+    background-image: url("../images/bodywallpaperD.jpg");
+    display: grid;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 20px;
+    max-width: 65vw;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    height: 680px;
+    grid-template-columns: 1fr 20%;
+    gap: 20px;
+    padding: 0;
+}
+#content2{
+    display: grid;
+    grid-template-rows: 1fr 10%;
+    gap: 20px;
+    padding: 0;
+    background: none;
+}
+#contentopc{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit,minmax(272px,1fr));
+    gap: 20px;
+    padding: 0;
+    background: none;
+}
+
+i{
+    position: relative;
+    transform: scale(8);
+    left: 170px;
+    top: 130px;
+}
+
+#cuadro1{
+    background: cyan;
+}
+#cuadro2{
+    background: #FF9D59;
+}
+#cuadro3{
+    background: white;
+}
+#bearicon{
+    position: absolute;
+    width: 230px;
+    height: 150px;
+    left: 90px;
+    top: 110px; 
+}
+
+.container-fluid div{
+    border: 1px solid black;
+}
+
+
+
